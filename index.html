@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script basics</title>
+</head>
+<body>
+    <script>
+        let a = 34;//Number
+        let b = "Javascript";//String
+        console.log(a);
+        console.log(b);
+        //variable declaration using let, var const
+        //constant values can not be chnaged get uncaught type errors if try so 
+       
+        let d = 15;
+        d = 15+5;
+        console.log(d);
+        
+        let val = true;
+        console.log(val);//Bool
+
+        function hello(){
+            console.log("Hey JavaScript");//Function
+        }
+
+        let objname = {}
+        console.log(typeof(objname)); //objects are stored in key value pairs 
+
+        
+        let alien = {
+            name : 'Sai',
+            tech : 'js',
+            'work exp': 4 ,//nested objects
+            laptop : {
+                cpu : 'i7',
+                ram : 4,
+                brand : ' DELL '
+            }
+        }
+        console.log(alien);
+        console.log(alien.name);//print the name (Sai)
+        console.log(alien.tech);// use more sense to use . operator most then index 
+        console.log(alien['work exp']);//if property is more than one word. Can't fetch the value using dot operator so use this
+        console.log(alien.laptop.brand);
+        console.log(typeof(alien.laptop.brand));
+        console.log(alien.laptop.brand.length);
+        console.log(alien.laptop.brand1);//undefine since undefine is not a property  
+
+        const c = 10 
+        c = 156
+        console.log(c);
+    </script>
+    <h1>I am learning Javascript</h1>
+</body>
+</html>
